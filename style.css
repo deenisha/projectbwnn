@@ -27,17 +27,16 @@ section.color {
   float:left;
 }
 .top-right {
-  float:right;
-  margin-right: 40px;
+    float: left;
+    margin-right: 40px;
+    width: 118px;
+    display: block;
 }
 
 /* COLUMNS */
 
 .col-md {
      width: 33.33333333%;
-}
-.col-sm {
-    width: 25%;
 }
 .container {
     width:100%;
@@ -208,12 +207,7 @@ section.pattern {
   padding-left: 15px;
   padding-right:15px;
 }
-.item-sm {
-  width: 260px;
-  float:left;
-  padding-left: 15px;
-  padding-right:15px;
-}
+
 .review-list {
   text-align: center;
   margin-bottom:35px;
@@ -370,7 +364,22 @@ section.hero>.container {
 .ourstory {
     padding:20px;
 }
+ .item-sm {
+    width: 260px;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .col-sm {
+    width: 100%;
+    }
 @media screen and (min-width: 480px) {
+    .top-right {
+    float:right;
+    margin-right: 40px;
+    width: 200px;
+    display: inline;
+    }
     section.pattern {
     background-image: url(img/subtlenet2.png);
     background-repeat: repeat;

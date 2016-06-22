@@ -367,6 +367,46 @@ section.hero>.container {
     right: 0;
     margin: auto;
 }
+@media screen and (min-width: 480px) {
+    section.pattern {
+    background-image: url(img/subtlenet2.png);
+    background-repeat: repeat;
+    background-color: rgba(39, 118, 220, 1);
+    height: auto;
+    }
+    section.hero {
+    height: 350px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 60% 20%;
+    background-size: cover;
+    padding: 60px 0;
+    }
+    section {
+    padding: 30px 0 30px 0;
+    }
+    .item-sm {
+    width: 260px;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .col-sm {
+    width: 100%;
+    }
+    .item {
+    width: 360px;
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    }
+    .col-md {
+    width: 100%;
+    }
+ 
+}
 @media screen and (min-width: 720px) {
     .container {
     width: 690px;
@@ -396,16 +436,16 @@ section.hero>.container {
     background-image: url(img/subtlenet2.png);
     background-repeat: repeat;
     background-color: rgba(39, 118, 220, 1);
-    height: 890px;
+    height: 940px;
     }
 }
 @media screen and (min-width: 1024px) {
     h2 {
     color: #000;
     font-size: 30px;
-    padding-right: 40px;
+    padding-right: 0;
     margin:0;
-    padding-top:40px;
+    padding-top:0;
     }
     .container {
     width: 980px;
@@ -432,15 +472,13 @@ section.hero>.container {
     width: 290px;
     }
     .review-list .review-img-sm img {
-    width: 220px;
+    width: 210px;
     height: 300px;
     border-radius: 0;
     -webkit-border-radius: 0;
     }
     .item-sm {
     width: 200px;
-    padding-left: 15px;
-    padding-right: 15px;
     }
 }
 

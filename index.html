@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>The Bar With No Name</title>
+  <!-- Stylesheets -->
+    <link href='https://necolas.github.io/normalize.css/4.1.1/normalize.css' rel='stylesheet' type='text/css'> <!-- normalize css -->
+  <link type="text/css" href="style.css" rel="stylesheet"></link>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><!-- Animate scroll -->
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+
+<body>
+  <header>
+  <nav>
+  <div class="container">
+    <div class="top-left">
+      <h1><a href="index.html">The Bar With No Name</a></h1>
+    </div>
+    <div class="top-right">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> <!-- end navbar -->
+</header>
+
+<section class="hero">
+			<div class="hero-bg"></div>
+			<div class="container">
+				<div class="page-header">
+					<div class="page-title">Mortal Kombat X</div>
+          <p>There will be no crying at the bar</p>
+            <a href="#events" class="btn btn-rounded">Finish Him</a>
+				</div>
+			</div>
+		</section>
+
+    <section>
+      <div class="container">
+    <div class="section">
+    <h2 class="section-title">Recent Reviews</h2>
+      <p>
+        You can trust our opinion on what to watch next.
+      </p>
+    </div>
+                <div class="review-wrapper">
+                  <div class="item-sm">
+                    <div class="review-list">
+                  <div class="review-img-sm">
+                    <img src="img/civilwar-review.jpg" alt="civial war">
+                    <span class="label label-success">9.2</span>
+                  </div>
+                  <div class="caption">
+                    <h4 class="item-title">Captain America: Civil War</h4>
+                    <p>Good</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item-sm">
+                <div class="review-list">
+              <div class="review-img-sm">
+                <img src="img/xmen-review.jpg" alt="xmen">
+                <span class="label label-warning">8.9</span>
+              </div>
+              <div class="caption">
+                <h4 class="item-title">X-Men: Apocalypse</h4>
+                <p>Good</p>
+              </div>
+            </div>
+          </div>
+          <div class="item-sm">
+            <div class="review-list">
+          <div class="review-img-sm">
+            <img src="img/batman-review.jpg" alt="batman vs superman">
+            <span class="label label-danger">7.2</span>
+          </div>
+          <div class="caption">
+            <h4 class="item-title">Batman vs Superman: Dawn of Justice</h4>
+            <p>Good</p>
+          </div>
+        </div>
+      </div>
+      <div class="item-sm">
+        <div class="review-list">
+      <div class="review-img-sm">
+        <img src="img/deadpool-review.jpg" alt="deadpool">
+        <span class="label label-success">7.9</span>
+      </div>
+      <div class="caption">
+        <h4 class="item-title">Deadpool</h4>
+        <p>Good</p>
+      </div>
+    </div>
+    </div>
+</div>
+</div>
+</section>
+<div class="clearfix"></div>
+
+
+
+<section class="color">
+  <div class="container">
+<p>
+  <b>Do you feel as if you too have the ability to use the force?</b>
+  <br />Whether it be for the good of man kind or its destruction, we can all agree that everyone needs a good craft beer.
+</p>
+</div>
+</section>
+
+<section>
+  <div class="container">
+<div class="section">
+<h2 class="section-title">Menu</h2>
+  <p>
+    With weekly specials, nerd nights, video games and live bands you know this is the place you wanna be!
+  </p>
+</div>
+<div class="menu-list">
+      <p><b>Monday -</b> $10 pitchers $2.75 Rail</p>
+      <p><b>Tuesday -</b> $3.50 Bottles</p>
+      <p><b>Wednesday -</b> $10 pitchers $2.75 Rail until 11pm</p>
+      <p><b>Thursday -</b> $3.75 Tall Cans</p>
+      <p><b>Friday -</b> Pitcher and Nachos $20</p>
+    </div>
+</section>
+<section class="about">
+  <div class="container">
+  </div>
+</section>
+
+<section class="pattern" id="events">
+  <div class="container">
+<div class="section">
+<h2 class="section-title">Events</h2>
+  <p>
+    The world is in chaos. The air is thick with tension. Do you have the skills that lead to victory?
+  </p>
+</div>
+						<div class="review-wrapper">
+              <div class="item">
+                <div class="review-list">
+							<div class="review-img">
+								<img src="img/mk-events.jpg" alt="mortal kombat">
+							</div>
+							<div class="caption">
+								<h4 class="item-title">Mortal Kombat X</h4>
+								<p>
+                  There will be no crying at the bar. Do you have the skills? #FinishHim
+                </p>
+							</div>
+						</div>
+          </div>
+          <div class="item">
+            <div class="review-list">
+          <div class="review-img">
+            <img src="img/mg-events.jpg" alt="magic">
+          </div>
+          <div class="caption">
+            <h4 class="item-title">Magic Gathering</h4>
+            <p>
+              There are 16 slots available at 6pm and 8pm. Let the cards choose your fate and good luck all.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="review-list">
+      <div class="review-img">
+        <img src="img/sf-events.jpg" alt="street fighter">
+      </div>
+      <div class="caption">
+        <h4 class="item-title">Street Fighter V</h4>
+        <p>The path to becoming a true martial artist never ends. #ProveYourself</p>
+      </div>
+    </div>
+  </div>
+  <div class="item">
+    <div class="review-list">
+  <div class="review-img">
+    <img src="img/k-events.jpg" alt="karokee">
+  </div>
+  <div class="caption">
+    <h4 class="item-title">Karokee Every Sunday</h4>
+    <p>Presented by Steele Entertainment. 10pm start time. Release your inner superstar.</p>
+  </div>
+</div>
+</div>
+<div class="item">
+  <div class="review-list">
+<div class="review-img">
+  <img src="img/coh-events.jpg" alt="cards of humanity">
+</div>
+<div class="caption">
+  <h4 class="item-title">Cards Against Humanity</h4>
+  <p>Not the same rules your used too. Its not a tech bubble, its a _____.</p>
+</div>
+</div>
+</div>
+<div class="item">
+  <div class="review-list">
+<div class="review-img">
+  <img src="img/mariokart-events.jpg" alt="mario kart">
+</div>
+<div class="caption">
+  <h4 class="item-title">Mario Kart</h4>
+  <p>Drivers, Start Your Engines! The worldwide race is on...its about to get ugly! </p>
+</div>
+</div>
+</div>
+						</div>
+          </div>
+        </section>
+        <div class="clearfix"></div>
+
+
+
+<section>
+    <div class="container">
+  <div class="section">
+  <h2 class="section-title">Contact Us</h2>
+    <p>
+      Monday - Sunday 4PM - 2AM | Tel: 647.729.2737
+    </p>
+    <p>651 Bloor St W, Toronto, ON M6P 1A6</p>
+  </div>
+  </div>
+</section>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.660762111821!2d-79.45836368483391!3d43.65522587912116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b3430899bf465%3A0xd2fd4f2526a205e7!2s1651+Bloor+St+W%2C+Toronto%2C+ON+M6P+1A6!5e0!3m2!1sen!2sca!4v1464183318318" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<footer>
+<p>Copyright © 2016 The Bar With No Name. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

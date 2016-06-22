@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Bar With No Name</title>
+  <!-- Stylesheets -->
+    <link href='https://necolas.github.io/normalize.css/4.1.1/normalize.css' rel='stylesheet' type='text/css'> <!-- normalize css -->
+  <link type="text/css" href="style.css" rel="stylesheet"></link>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script><!-- Animate scroll -->
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+
+<body>
+  <header>
+  <nav>
+  <div class="container">
+    <div class="top-left">
+      <h1><a href="index.html">The Bar With No Name</a></h1>
+    </div>
+    <div class="top-right">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Menu</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> <!-- end navbar -->
+</header>
+<div class="clearfix"></div>
+<section class="color">
+  <div class="container">
+<p>
+  With weekly specials, nerd nights, video games and live bands you know this is the place you wanna be!
+</p>
+</div>
+</section>
+
+<section>
+  <div class="container">
+<div class="section">
+<h2 class="section-title">Menu</h2>
+<div class="menu-list">
+      <p><b>Monday -</b> $10 pitchers $2.75 Rail</p>
+      <p><b>Tuesday -</b> $3.50 Bottles</p>
+      <p><b>Wednesday -</b> $10 pitchers $2.75 Rail until 11pm</p>
+      <p><b>Thursday -</b> $3.75 Tall Cans</p>
+      <p><b>Friday -</b> Pitcher and Nachos $20</p>
+    </div>
+</section>
+<section class="about">
+  <div class="container">
+  </div>
+</section>
+
+<footer>
+<p>Copyright © 2016 The Bar With No Name. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

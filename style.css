@@ -27,8 +27,19 @@ section.color {
   float:left;
 }
 .top-right {
-  float:right;
-  margin-right: 40px;
+    float: left;
+    margin-right: 40px;
+    width: 118px;
+    display: block;
+}
+
+/* COLUMNS */
+
+.col-md {
+     width: 33.33333333%;
+}
+.container {
+    width:100%;
 }
 
 
@@ -49,9 +60,7 @@ h1 {
 h2 {
     color: #000;
     font-size: 30px;
-    padding-right: 40px;
     margin:0;
-    padding-top:40px;
 }
 h3 {
   text-transform:uppercase;
@@ -75,6 +84,7 @@ footer p {
 .section p {
     font-size: 16px;
     font-weight:300;
+    padding: 0 20px;
 }
 
 header {
@@ -167,7 +177,7 @@ padding: 40px;
 background-image: url(img/bwnn-contact.jpg);
 background-repeat: no-repeat;
 background-size:cover;
-height:300px;
+height:100px;
 }
 .about p {
   font-size:24px;
@@ -176,10 +186,6 @@ height:300px;
   line-height:1.6;
   font-weight:300;
   margin:0;
-}
-.container {
-  width: 1170px;
-  margin:auto;
 }
 footer {
   background: #000;
@@ -201,12 +207,7 @@ section.pattern {
   padding-left: 15px;
   padding-right:15px;
 }
-.item-sm {
-  width: 260px;
-  float:left;
-  padding-left: 15px;
-  padding-right:15px;
-}
+
 .review-list {
   text-align: center;
   margin-bottom:35px;
@@ -360,3 +361,140 @@ section.hero>.container {
     right: 0;
     margin: auto;
 }
+.ourstory {
+    padding:20px;
+}
+ .item-sm {
+    width: 260px;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .col-sm {
+    width: 100%;
+    }
+@media screen and (min-width: 480px) {
+    .top-right {
+    float:right;
+    margin-right: 40px;
+    width: 200px;
+    display: inline;
+    }
+    section.pattern {
+    background-image: url(img/subtlenet2.png);
+    background-repeat: repeat;
+    background-color: rgba(39, 118, 220, 1);
+    height: auto;
+    }
+    section.hero {
+    height: 350px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: 60% 20%;
+    background-size: cover;
+    padding: 60px 0;
+    }
+    section {
+    padding: 30px 0 30px 0;
+    }
+    .item-sm {
+    width: 260px;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .col-sm {
+    width: 100%;
+    }
+    .item {
+    width: 360px;
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    }
+    .col-md {
+    width: 100%;
+    }
+ 
+}
+@media screen and (min-width: 720px) {
+    .container {
+    width: 690px;
+    margin:auto;
+    }
+    .col-md {
+     width: 33.33333333%;
+     float:left;
+    }
+    .col-sm {
+    width: 50%;
+    float:left;
+    }
+    .review-list .review-img img {
+    width: 205px;
+    height: 150px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    }
+    .item {
+    width: 205px;
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    section.pattern {
+    background-image: url(img/subtlenet2.png);
+    background-repeat: repeat;
+    background-color: rgba(39, 118, 220, 1);
+    height: 940px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    h2 {
+    color: #000;
+    font-size: 30px;
+    padding-right: 0;
+    margin:0;
+    padding-top:0;
+    }
+    .container {
+    width: 980px;
+    margin:auto;
+    }
+    .section p {
+    font-size: 16px;
+    font-weight:300;
+    }
+    section.about {
+    padding: 40px;
+    background-image: url(img/bwnn-contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    }
+    .review-list .review-img img {
+    width: 290px;
+    height:200px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    }
+    .item {
+    width: 290px;
+    }
+    .review-list .review-img-sm img {
+    width: 210px;
+    height: 300px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    }
+    .item-sm {
+    width: 200px;
+    }
+     .col-sm {
+    width: 25%;
+    float:left;
+    }
+}
+

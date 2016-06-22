@@ -367,6 +367,9 @@ section.hero>.container {
     right: 0;
     margin: auto;
 }
+.ourstory {
+    padding:20px;
+}
 @media screen and (min-width: 480px) {
     section.pattern {
     background-image: url(img/subtlenet2.png);
@@ -479,6 +482,10 @@ section.hero>.container {
     }
     .item-sm {
     width: 200px;
+    }
+     .col-sm {
+    width: 25%;
+    float:left;
     }
 }
 
